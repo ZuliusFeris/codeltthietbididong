@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QLSinhVien.Login"
+             BackgroundColor="AntiqueWhite">
+    <ContentPage.Content>
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            
+            <Image Source="DLA" WidthRequest="180" HeightRequest="180"/>
+            <Entry x:Name="user" Placeholder="Nhập tài khoản"
+                
+                />
+
+            <Entry x:Name="password" Placeholder="Nhập mật khẩu" IsPassword="True"
+                
+                />
+            <Button Text="ĐĂNG NHẬP" VerticalOptions="Center"
+                TextColor="Black"
+                    BorderWidth="1.5"
+                    CornerRadius="50"
+                Clicked="log" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

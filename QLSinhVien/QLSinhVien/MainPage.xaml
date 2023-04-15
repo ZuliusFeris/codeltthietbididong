@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:conv="clr-namespace:QLSinhVien.RandomColor"
+             xmlns:local="clr-namespace:QLSinhVien"
+             x:Class="QLSinhVien.MainPage"
+             Title="QUẢN LÍ SINH VIÊN"
+             BackgroundImageSource="hhhhh.jpg">
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Text="Xem TKB"
+                     Clicked="OnNoteAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <conv:randomcolor x:Key="RandomColorConverter" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+        <ListView RowHeight="100" x:Name="listsinhvien">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="100">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label x:Name="lblid" Grid.Column="0" Text="{Binding id}" TextColor="{Binding ., Converter={StaticResource RandomColorConverter}}" FontSize="Medium"/>
+                            <Label x:Name="lblhoten" Grid.Column="1" Text="{Binding hoten}" FontSize="20" TextColor="{Binding ., Converter={StaticResource RandomColorConverter}}"/>
+                            <Label x:Name="lblngaysinh" Grid.Column="2" Text="{Binding ngaysinh}" FontSize="20"/>
+                            <Label x:Name="lblgioitinh" Grid.Column="3" Text="{Binding gioitinh}" FontSize="20" />
+                            <Label x:Name="lblsdt" Grid.Column="4" Text="{Binding sdt}" FontSize="20" />
+                            <Button x:Name="btnSua" Clicked="BtnSua_Clicked" Grid.Column="5" HorizontalOptions="Start" Text="Sửa"/>
+                            <Button x:Name="btnXoa" Clicked="BtnXoa_Clicked" Grid.Column="6" HorizontalOptions="End" Text="Xóa"/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <StackLayout Orientation="Horizontal">
+            <Button x:Name="btnAdd" Text="+" 
+                    FontSize="20" WidthRequest="50" 
+                    HeightRequest="50" CornerRadius="25" HorizontalOptions="EndAndExpand" 
+                    Padding="10"
+                    TextColor="White" BackgroundColor="Blue"
+                    Clicked="BtnAdd_Clicked"></Button>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

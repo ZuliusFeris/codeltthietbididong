@@ -1,0 +1,124 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien.Android\\QLSinhVien.Android.csproj": {}
+  },
+  "projects": {
+    "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien.Android\\QLSinhVien.Android.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien.Android\\QLSinhVien.Android.csproj",
+        "projectName": "QLSinhVien.Android",
+        "projectPath": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien.Android\\QLSinhVien.Android.csproj",
+        "packagesPath": "C:\\Users\\SowaZoe\\.nuget\\packages\\",
+        "outputPath": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien.Android\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SowaZoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "monoandroid90"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "monoandroid90": {
+            "projectReferences": {
+              "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\QLSinhVien.csproj": {
+                "projectPath": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\QLSinhVien.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "monoandroid90": {
+          "dependencies": {
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            }
+          }
+        }
+      }
+    },
+    "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\QLSinhVien.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\QLSinhVien.csproj",
+        "projectName": "QLSinhVien",
+        "projectPath": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\QLSinhVien.csproj",
+        "packagesPath": "C:\\Users\\SowaZoe\\.nuget\\packages\\",
+        "outputPath": "F:\\HocKy7\\LTthietbididong\\QLSinhVien\\QLSinhVien\\QLSinhVien\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\ProgramData\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SowaZoe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Essentials": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1451, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.8.116, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

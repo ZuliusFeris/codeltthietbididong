@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QLSinhVien.Views.Diem"
+             Title="THỜI KHÓA BIỂU">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Picker x:Name="pkrClass" 
+                    ItemDisplayBinding="{Binding Class}" 
+                    SelectedIndexChanged="pkrClass_SelectedIndexChanged">
+                <!--<Picker.Items>
+                    <x:String>20TH</x:String>
+                    <x:String>20KT</x:String>
+                    <x:String>20TC</x:String>
+                    <x:String>20XD</x:String>
+                    <x:String>20TA</x:String>
+                    <x:String>20MK</x:String>
+                    <x:String>20LK</x:String>
+                    <x:String>20QT</x:String>
+                    <x:String>20DL</x:String>
+                </Picker.Items>-->
+            </Picker>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label  Grid.Column="0" Grid.Row="0"  Text="Thứ 2" FontSize="Medium"/>
+                <Label x:Name="d1"  Grid.Column="1" Grid.Row="0"   FontSize="20" />
+
+                <Label   Grid.Column="0" Grid.Row="1"  Text="Thứ 3" FontSize="Medium"/>
+                <Label x:Name="d2" Grid.Column="1" Grid.Row="1"   FontSize="20" />
+
+                <Label  Grid.Column="0" Grid.Row="2"  Text="Thứ 4" FontSize="Medium"/>
+                <Label x:Name="d3" Grid.Column="1" Grid.Row="2"   FontSize="20" />
+
+                <Label  Grid.Column="0" Grid.Row="3"  Text="Thứ 5" FontSize="Medium"/>
+                <Label x:Name="d4" Grid.Column="1" Grid.Row="3"   FontSize="20" />
+
+                <Label  Grid.Column="0" Grid.Row="4"  Text="Thứ 6" FontSize="Medium"/>
+                <Label x:Name="d5" Grid.Column="1" Grid.Row="4"   FontSize="20" />
+                <Label  Grid.Column="0" Grid.Row="5"  Text="Thứ 7" FontSize="Medium"/>
+                <Label x:Name="d6" Grid.Column="1" Grid.Row="5"   FontSize="20" />
+                
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

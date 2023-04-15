@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QLSinhVien.Views.AddSV"
+             BackgroundImageSource="trang.jpg"
+             Title="Thêm sinh viên">
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="FillAndExpand" Text="Họ tên: "/>
+                <Entry HorizontalOptions="End" x:Name="txtHoten" WidthRequest="200" Placeholder="Nhập tên sinh viên"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="FillAndExpand" Text="Ngày tháng năm sinh: "/>
+                <DatePicker HorizontalOptions="End" x:Name="txtNgaysinh" WidthRequest="100" Format="dd/MM/yyyy"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="FillAndExpand" Text="Giới tính: "/>
+                <Picker HorizontalOptions="End" x:Name="pkGioitinh" WidthRequest="100">
+                    <Picker.Items>
+                        <x:String>Nam</x:String>
+                        <x:String>Nữ</x:String>
+                    </Picker.Items>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label HorizontalOptions="FillAndExpand" Text="Điện thoại: "/>
+                <Entry HorizontalOptions="End" x:Name="txtSDT" WidthRequest="200" Placeholder="Nhập số điện thoại"/>
+            </StackLayout>
+           
+            
+            <StackLayout>
+                <Button HorizontalOptions="End" x:Name="btnThem" Text="Lưu" Clicked="BtnThem_Clicked"/>
+            </StackLayout>
+            
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
